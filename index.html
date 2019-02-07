@@ -14,9 +14,7 @@
 
 <script>
 function myFunction() {
-alert("Before open link");
-window.open("http://google.com/", "_system");
-alert("After open link");
+window.plugins.childBrowser.showWebPage('https://twitter.com/share?text=encode...', { showLocationBar: true,showAddress :true }); 
 }
 </script>
 
