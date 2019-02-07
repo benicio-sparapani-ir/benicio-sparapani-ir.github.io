@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<head>
+		<title>EXPOSIÇÃO "FRIDA E EU" - SEGUNDA-FEIRA</title>
+		<meta http-equiv="refresh" content="5">
+	</head>		
 
-<h1>The onclick Event</h1>
-
-<p>The onclick event is used to trigger a function when an element is clicked on.</p>
-
-<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
-
-<a href="http://www.google.com" target="_blank">http://www.google.com</a>
-
-<p id="demo"></p>
-
-<script>
-// Mobile Safari in standalone mode
-if(("standalone" in window.navigator) && window.navigator.standalone){
-
-    // If you want to prevent remote links in standalone web apps opening Mobile Safari, change 'remotes' to true
-    var noddy, remotes = false;
-
-    document.addEventListener('click', function(event) {
-
-        noddy = event.target;
-
-        // Bubble up until we hit link or top HTML element. Warning: BODY element is not compulsory so better to stop on HTML
-        while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
-            noddy = noddy.parentNode;
-        }
-
-        if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
-        {
-            event.preventDefault();
-            document.location.href = noddy.href;
-        }
-
-    },false);
-}
-</script>
-
-</body>
+	<body background="http://beniciojunior.github.io/background.png" bgcolor="#fe7600">
+		
+		<center>			
+			<base target="_blank" />
+			<a href="ingressorapido://server/ir/event/56381">
+				<img src="https://www.ingressorapido.com.br/ImagensSistema/Eventos/eI056712.jpg" height="75%" width="75%"></a>				
+			<br>
+			<br>
+			<br>
+			<a href="http://br.peppapig.com/intro/">
+				<img src="http://www.imagenspng.com.br/wp-content/uploads/2016/04/peppa-pig-01.png" height="40%" width="40%"></a>
+			<br>
+			<br>
+			<br>
+			<a href="ingressorapido://close">
+				<img src="http://pngimages.net/sites/default/files/end-button-png-image-72583.png" height="50" width="50"></a>
+		</center>
+	</body>
 </html>
-
-
